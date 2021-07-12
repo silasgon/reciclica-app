@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar color="success">
-    <ion-buttons slot="start" >
+    <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Reciclica</ion-title>
@@ -8,33 +8,33 @@
 </ion-header>
 
 <ion-content>
-<ion-list color="success">
-  <ion-item color="success">
-    <ion-avatar slot="start">
-      <img src="https://img.icons8.com/bubbles/50/000000/user.png"/>
-    </ion-avatar>
-    <ion-label>
-      <h1>Silas Reis</h1>
-      <p>Gathiner: <span class="money">$ 15,00</span></p>
-    </ion-label>
-  </ion-item>
-</ion-list>
+  <ion-list color="success">
+    <ion-item color="success">
+      <ion-avatar slot="start">
+        <img src="https://img.icons8.com/bubbles/50/000000/user.png" />
+      </ion-avatar>
+      <ion-label>
+        <h1>Silas Reis</h1>
+        <p>Gathiner: <span class="money">$ 15,00</span></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 
-<!-- Chamada de um componente reutilizavel ionic, por meio de envio de conteudo -->
-<app-pickup-call-card status="On hold" updateAt="25/042021 16:29" createdAt="24/04/2021"
+  <!-- Chamada de um componente reutilizavel ionic, por meio de envio de conteudo -->
+  <app-pickup-call-card status="On hold" updateAt="25/042021 16:29" createdAt="24/04/2021"
     notes="we have two bags that are full, one with plastic and the other with glasses">
 
-  <ion-card-header header>
-    <ion-card-subtitle>Last pickup call</ion-card-subtitle>
-  </ion-card-header>
-  
-  <ion-button color="success" fill="clear" size="full" footer>See all...</ion-button>
+    <ion-card-header header>
+      <ion-card-subtitle>Last pickup call</ion-card-subtitle>
+    </ion-card-header>
 
-</app-pickup-call-card>
+    <ion-button color="success" fill="clear" size="full" footer (click)="goToPickupCalls()">See all...</ion-button>
 
-<ion-fab vertical="bottom" horizontal="end" slot="fixed">
-  <ion-fab-button color="success">
-    <ion-icon name="add">+</ion-icon>
-  </ion-fab-button>
-</ion-fab>
+  </app-pickup-call-card>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success" (click)="newPickupCall()">
+      <ion-icon name="add">+</ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
