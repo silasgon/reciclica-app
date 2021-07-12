@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>My pickup calls</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Chamada de um componente reutilizavel ionic, por meio de parametros -->
+<!-- card 01 -->
+  <app-pickup-call-card status="On hold" updateAt="25/042021 16:29" createdAt="24/04/2021"
+    notes="we have two bags that are full, one with plastic and the other with glasses"></app-pickup-call-card> 
+
+<!-- card 02 -->
+  <app-pickup-call-card status="Processing" updateAt="24/04/2021 10:00" createdAt="23/04/2021"
+    notes="we have two bags that are full"></app-pickup-call-card>
+
+<!-- card 03 -->
+  <app-pickup-call-card status="Finished" updateAt="23/04/2021 18:00:00" createdAt="22/04/2021" value="$ 10,00"></app-pickup-call-card>
+
+</ion-content>
